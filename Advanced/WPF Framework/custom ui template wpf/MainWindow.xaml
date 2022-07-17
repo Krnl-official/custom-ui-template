@@ -1,0 +1,24 @@
+﻿<Window x:Class="custom_ui_template_wpf.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:custom_ui_template_wpf"
+        mc:Ignorable="d"
+        Title="custom ui template" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <RichTextBox Margin="10,10,10,55">
+            <FlowDocument>
+                <Paragraph>
+                    <Run x:Name="Editor" Text=""/>
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+        <Button Content="Execute" HorizontalAlignment="Left" Margin="10,384,0,0" VerticalAlignment="Top" Height="40" Width="143" PreviewMouseUp="Button_MouseUp"/>
+        <Button Content="Inject" HorizontalAlignment="Left" Margin="158,384,0,0" VerticalAlignment="Top" Height="40" Width="143" PreviewMouseUp="Button_MouseUp_1"/>
+        <Button Content="Clear" HorizontalAlignment="Left" Margin="306,384,0,0" VerticalAlignment="Top" Height="40" Width="143" PreviewMouseUp="Button_MouseUp_2"/>
+    </Grid>
+</Window>
